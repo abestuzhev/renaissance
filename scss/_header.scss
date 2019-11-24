@@ -1,0 +1,133 @@
+
+.header {
+    background-color: #ffffff;
+    height: 72px;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out
+}
+
+.header__topheader {
+    height: 72px
+}
+
+.header__ilogolink {
+    display: block;
+    margin-top: 8px
+}
+
+.header__ilogolink svg {
+    width: 190px;
+    height: 26px
+}
+
+.header__item--burger {
+    margin-left: auto;
+    margin-right: 30px
+}
+
+.header__item .sbmenu__ilink:hover {
+    padding-top: 24px;
+    border-top: 4px solid #e93f70
+}
+
+.defaultcont {
+    padding-left: 60px;
+    padding-right: 60px;
+    max-width: 1300px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.footer {
+    background-color: #e1e1e1;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 3
+}
+
+.footer__cont {
+    min-height: 130px;
+    padding-top: 30px;
+    padding-bottom: 30px
+}
+
+.footer__logo {
+    opacity: .7;
+    display: block;
+    -webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -ms-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out
+}
+
+.footer__logo:hover {
+    opacity: 1
+}
+
+.footer__item--menu {
+    text-align: center;
+    margin-top: 20px
+}
+
+.footer__copyright {
+    opacity: .7;
+    font-family: 'TTNorms Regular';
+    margin-top: 10px
+}
+
+.footer .sbmenu__ilink {
+    opacity: .7
+}
+
+.footer .sbmenu__ilink:hover {
+    opacity: 1
+}
+
+.footer__disclaimer {
+    padding-right: 30px;
+    padding-top: 10px;
+    font-family: 'TTNorms Light'
+}
+
+.footer .sbmenu__ilink {
+    white-space: nowrap;
+}
+
+.strangebrain {
+    width: 210px;
+    margin-left: 30px;
+    color: #000000;
+    opacity: .7;
+    font-family: 'TTNorms Light';
+    white-space: nowrap;
+    text-align: left;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out
+}
+
+.strangebrain__icon {
+    margin-right: 10px
+}
+
+.strangebrain:hover {
+    opacity: 1
+}
+
+.strangebrain__link {
+    color: #000000 !important;
+    font-size: 12px
+}
+
+.strangebrain__link:hover, .strangebrain__link:active, .strangebrain__link:focus {
+    color: #000000
+}
