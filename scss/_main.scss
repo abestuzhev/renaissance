@@ -926,7 +926,7 @@
 .scheme {
     width: 100%;
     margin-bottom: 60px;
-    background: url(../img/scheme-bg.jpg) 0 0 no-repeat;
+    background: url(../img/scheme-bg.jpg) 50% 50% no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 
@@ -1084,32 +1084,47 @@
             flex-flow: row nowrap;
             justify-content: flex-start;
             align-items: center;
+
+            &:nth-child(1) {
+                .composition-table-col {
+                    border-top: none;
+                    border-bottom: none;
+
+                    &:nth-child(1) {
+                        padding: 10px 0;
+                    }
+                }
+            }
         }
 
         &-col {
             padding: 0 6px;
-
-            width: 33.3333%;
             text-align: center;
             margin-bottom: 4px;
 
+            &:nth-child(1) {
+                width: 40%;
+            }
+
             &:nth-child(2) {
+                width: 30%;
                 border-top: 1px solid #dee2e6;
                 border-bottom: 1px solid #dee2e6;
-                padding: 10px 6px;
+                padding: 10px 0;
             }
 
             &:nth-child(3) {
+                width: 30%;
                 border-top: 1px solid #dee2e6;
                 border-bottom: 1px solid #dee2e6;
-                padding: 10px 6px;
+                padding: 10px 0;
             }
         }
 
         &-title {
             text-align: left;
-            font-size: 28px;
-            line-height: .9;
+            font-size: 32px;
+            line-height: .7;
         }
 
         &__small-text {
@@ -1119,10 +1134,10 @@
         &__vitamin {
             font-size: 25px;
             width: 100%;
-            padding: 9px 0 15px;
+            padding: 13px 6px 20px;
             border-radius: 50px;
             color: #ffffff;
-            line-height: 1;
+            line-height: .75;
         }
 
         &__text {
@@ -1137,6 +1152,31 @@
             margin-bottom: 8px;
             line-height: 1;
         }
+    }
+}
+
+.video {
+
+
+    &-layout {
+        position: relative;
+        padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+        height: 0;
+        overflow: hidden;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-width: 0;
+            outline-width: 0;
+        }
+    }
+
+    .page-title {
+        display: none;
     }
 }
 
@@ -1190,7 +1230,8 @@
     background: url(../img/product-bg.jpg) 0 0 no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    min-height: 700px;
+    //min-height: 700px;
+    overflow: hidden;
 
     &-body {
         max-width: 590px;
@@ -1273,6 +1314,18 @@
         justify-content: flex-start;
         align-items: stretch;
         margin-bottom: 30px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -6%;
+            left: 161px;
+            z-index: 0;
+            width: 373px;
+            height: 360px;
+            background: url(../img/product-line-up.png) 0 0 no-repeat;
+        }
 
         &__item {
             width: 240px;
@@ -1339,6 +1392,20 @@
     &-schedule {
         position: relative;
         z-index: 2;
+        overflow: hidden;
+
+        &-slider {
+            height: 0;
+            opacity: 0;
+            background-color: rgba(255,255,255,.9);
+
+            .component-schedule-card {
+                padding: 0;
+                margin: 0;
+                text-align: center;
+            }
+        }
+        
         &__title {
             font-size: 30px;
             color: #b7332d;
@@ -1381,6 +1448,30 @@
                 color: #313131;
                 line-height: 1;
             }
+
+            &-point {
+                position: absolute;
+
+                &__round {
+
+                    width: 13px;
+                    height: 13px;
+                    border:3px solid #b7332d;
+                    background-color: #fff;
+                    border-radius: 150px;
+                    z-index: 10;
+                }
+                
+                &__line {
+                    position: absolute;
+                    z-index: -1;
+                    margin-left:-2px;
+                    display: inline-block;
+                    height: 1px;
+                    background-color: #dadada;
+                    margin-top: -1px;
+                }
+            }
         }
 
         &-scene {
@@ -1394,7 +1485,7 @@
         position: absolute;
         z-index: 10;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-56%);
 
         &--left {
             left: 0;

@@ -151,8 +151,8 @@ $(function () {
             }
         }
     }
-    $(window).on('resize', fix_size('.catalog-card__img img', '.catalog-card__img'));
-    fix_size('.catalog-card__img img', '.catalog-card__img');
+    $(window).on('resize', fix_size('.shop-card-img img', '.shop-card-img'));
+    fix_size('.shop-card-img img', '.shop-card-img');
 
 
     $('.document-list').slick({
@@ -186,61 +186,14 @@ $(function () {
         ]
     });
 
-    $('.slider-category').slick({
+
+
+    $('.component-schedule-slider').slick({
         dots: false,
         arrows: true,
         infinite: true,
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 1380,
-                settings: {
-                    slidesToShow: 5,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 1190,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 970,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 770,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    centerMode: true,
-                    centerPadding: '80px'
-
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                    // centerMode: true,
-                    // centerPadding: '80px'
-                }
-            },
-            {
-                breakpoint: 550,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
+        slidesToShow: 1,
+        slidesToScroll: 1
     });
 
     function removeShow(){

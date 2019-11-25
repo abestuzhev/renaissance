@@ -1,0 +1,404 @@
+@media (max-width: 1220px){
+    .product-callback {
+        right: 16px;
+    }
+}
+
+@media (max-width: 1180px){
+    .page-title {
+        font-size: 39px;
+    }
+
+    .scheme-product {
+        width: 210px;
+    }
+
+    .scheme-product img {
+        width: 100%;
+    }
+
+    .scheme-body {
+        padding: 70px 0;
+    }
+
+    .scheme-card__text {
+        font-size: 20px;
+    }
+
+    .scheme-card__text span {
+        font-size: 24px;
+    }
+
+    .scheme-card__icon {
+        width: 80px;
+        height: 80px;
+        flex: 1 0 80px;
+    }
+
+    .scheme-list__item {
+        margin-bottom: 16px;
+    }
+
+    .questions-card__title {
+        font-size: 34px;
+    }
+
+    .questions-card__body {
+        padding: 20px 24px;
+        font-size: 20px;
+    }
+
+    .quote {
+        margin-bottom: 70px;
+    }
+
+    .composition-table-title {
+        font-size: 24px;
+        line-height: .9;
+    }
+
+    .component-figure img {
+        width: 35%;
+    }
+
+    .component-schedule-card-point {
+        display: none;
+    }
+
+    .quote {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 1080px){
+    .product-advantages::before {
+        content: '';
+        display: none;
+    }
+}
+
+@media (max-width: 1040px){
+    .shop-list {
+        width: 100%;
+        margin-left: -4px;
+        margin-right: -4px;
+        justify-content: flex-start;
+    }
+
+    .shop-list__item {
+        padding: 4px;
+        width: 33%;
+    }
+
+    .m-section {
+        margin-bottom: 30px;
+    }
+
+    .page-title {
+        font-size: 30px;
+    }
+
+    .quote {
+        margin-bottom: 40px;
+    }
+
+    .product-callback {
+        display: none;
+    }
+
+    .composition-table__vitamin {
+        font-size: 20px;
+    }
+
+    .composition-table__text {
+        font-size: 16px;
+    }
+
+    .composition-col {
+        padding: 0 6px;
+    }
+
+    .composition-grid {
+        margin-left: -6px;
+        margin-right: -6px;
+    }
+
+    .questions-card__title {
+        font-size: 28px;
+    }
+
+    .questions-card__icon {
+        width: 87px;
+        height: 129px;
+        background-size: 87px 129px;
+    }
+
+    .quote-text {
+        font-size: 32px;
+    }
+
+    .component-col {
+        display: none;
+    }
+
+    .component-schedule-scene {
+        height: 65vw;
+    }
+
+    .component-schedule-slider {
+        position: relative;
+        z-index: 11;
+        height: auto;
+        opacity: 1;
+        padding: 20px 30px;
+    }
+
+    .component-figure img {
+        width: 80%;
+    }
+
+    .component-figure {
+        left: 21%;
+    }
+
+    .component-elem--3,
+    .component-elem--3 img {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 860px){
+    .composition-col {
+        padding: 0;
+        width: 100%;
+    }
+
+    .composition-grid {
+        margin-left: 0;
+        margin-right: 0;
+        display: block;
+    }
+
+    .scheme-body {
+        width: 70%;
+    }
+
+    .scheme {
+        background-position: 0 0;
+    }
+
+    .scheme-head {
+        max-width: 407px;
+    }
+}
+
+@media (max-width: 760px){
+
+    .shop-list__item {
+        width: 50%;
+    }
+
+    .shop-card-img {
+        text-align: center;
+        padding: 10px 16px;
+        height: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .shop-card-img img {
+        width: 90%;
+        display: block;
+    }
+
+    .main {
+        padding: 46px 0 40px;
+    }
+
+    .shop-card {
+        //display: block;
+    }
+
+    .quote {
+        margin-bottom: 30px;
+    }
+
+    .video .page-title {
+        display: block;
+    }
+
+    .composition-table__vitamin {
+        font-size: 16px;
+    }
+
+    .composition-table__vitamin {
+        padding: 10px 6px 13px;
+    }
+
+    .composition-table-title {
+        font-size: 22px;
+    }
+
+    .questions-card__icon {
+        width: 63px;
+        height: 94px;
+        background-size: 63px 94px;
+        top: -20px;
+        right: -6px;
+    }
+
+    .questions-grid {
+        display: block;
+    }
+
+    .questions-col {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .questions-col:last-child {
+        margin-bottom: 0;
+    }
+
+    .questions-card__title {
+        padding-right: 44px;
+    }
+
+    .scheme-body {
+        width: 100%;
+    }
+
+    .scheme-product {
+        width: 156px;
+    }
+
+    .scheme-body {
+        padding: 40px 0;
+    }
+
+    .scheme {
+        margin-bottom: 40px;
+    }
+}
+
+
+
+@media (max-width: 540px){
+    .page-title {
+        font-size: 25px;
+    }
+
+    .shop-card {
+        height: 54px;
+    }
+
+    .quote {
+        margin-bottom: 20px;
+    }
+
+    .composition-table__vitamin {
+        font-size: 14px;
+    }
+
+    .composition-table__text {
+        font-size: 12px;
+    }
+
+    .composition-grid {
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+
+    .composition-note {
+        padding: 0 16px;
+    }
+
+    .composition-card {
+        border-radius: 0;
+        border-left:none;
+        border-right:none;
+        margin: 8px 0 8px
+    }
+
+    .composition-table-title {
+        font-size: 19px;
+    }
+
+    .page-text {
+        margin-bottom: 15px;
+    }
+
+    .questions-card__title {
+        font-size: 24px;
+    }
+
+    .questions-card__head {
+        padding: 13px 20px 20px
+    }
+
+    .quote-avatar {
+        display: none;
+    }
+
+    .quote-text {
+        font-size: 26px;
+    }
+
+    .quote-name {
+        font-size: 20px;
+        line-height: 1;
+    }
+
+    .scheme-card__text {
+        font-size: 16px;
+    }
+
+    .scheme-card__text span {
+        font-size: 16px;
+    }
+
+    .scheme-card__icon {
+        width: 40px;
+        height: 40px;
+        flex: 1 0 40px;
+    }
+
+    .scheme-card__icon img {
+        width: 23px;
+        height: 23px;
+    }
+
+    .scheme-product {
+        width: 134px;
+    }
+
+    .scheme {
+        margin-bottom: 30px;
+    }
+
+    .component {
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
