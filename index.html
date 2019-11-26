@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="js/sumoselect/sumoselect.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="">
 <div class="wrapper">
     <!--START header-->
     <header class="header js-fixed-topmenu ">
@@ -303,9 +303,9 @@
     </div>
     <!--END header-->
     <!--START main-->
-    <main class="main">
+    <main class="main add-animation">
 
-        <div class="m-section product">
+        <div class="m-section product scroll-to-reveal">
             <div class="layout">
                 <div class="product-body">
                     <div class="product-name">
@@ -314,10 +314,10 @@
                     <div class="product-text">Комбинированный комплекс для суставов</div>
 
                     <div class="product-item-layout">
-                        <div class="product-item">
+                        <div class="product-item rellax" data-rellax-speed="1">
                             <img src="./img/product-item.png" alt="">
                         </div>
-                        <div class="product-item-blur">
+                        <div class="product-item-blur rellax" data-rellax-speed="2">
                             <img src="./img/product-item-blur.png" alt="">
                         </div>
                     </div>
@@ -383,7 +383,7 @@
         </div>
 
         <div class="layout">
-            <div class="m-section component">
+            <div class="m-section component scroll-to-reveal">
                 <div class="component-elem component-elem--1">
                     <img src="./img/component-elem-1.png" alt="">
                 </div>
@@ -410,11 +410,11 @@
 
 
                     <div class="component-schedule-scene">
-                        <div class="component-figure">
+                        <div class="component-figure rellax" data-rellax-speed="0" data-rellax-percentage="0.5">
                             <img src="./img/man.png" alt="">
                         </div>
 
-                        <div class="component-elem component-elem--3">
+                        <div class="component-elem component-elem--3 rellax" data-rellax-speed="4" data-rellax-percentage=".5">
                             <img src="./img/gear.png" alt="">
                         </div>
                         <div class="component-col component-col--left">
@@ -641,7 +641,7 @@
             </div>
         </div>
 
-        <div class="quote">
+        <div class="quote scroll-to-reveal">
             <div class="layout">
                 <div class="quote-card">
                     <div class="quote-body">
@@ -659,7 +659,7 @@
 
         <div class="layout">
 
-            <div class="m-section video">
+            <div class="m-section video scroll-to-reveal">
                 <h2 class="page-title">Смотреть видео</h2>
                 <div class="video-layout">
                     <iframe width="" height="" src="https://www.youtube.com/embed/8iU8LPEa4o0?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -667,7 +667,7 @@
             </div>
 
 
-            <div class="m-section composition">
+            <div class="m-section composition scroll-to-reveal">
                 <h2 class="page-title">Состав комплекса</h2>
                 <p class="page-text">
                     Оптимальные дозировки хондроитина (1200 мг) и глюкозамина (1500 мг), которые усиливают действие друг друга и оказывают
@@ -1046,7 +1046,7 @@
             </div>
         </div>
 
-        <div class="scheme">
+        <div class="scheme scroll-to-reveal">
             <div class="layout">
 
                 <div class="scheme-body">
@@ -1108,7 +1108,7 @@
         <div class="layout">
 
             <!--START questions-->
-            <div class="m-section questions">
+            <div class="m-section questions scroll-to-reveal">
                 <div class="questions-grid">
                     <!--START questions-col-->
                     <div class="questions-col">
@@ -1155,7 +1155,7 @@
             <!--END questions-->
 
             <!--START document-->
-            <div class="m-section document">
+            <div class="m-section document scroll-to-reveal">
                 <h2 class="page-title">Список документов</h2>
                 <div class="document-list">
                     <!--START document-list__item-->
@@ -1234,7 +1234,7 @@
             </div>
             <!--END document-->
 
-            <div class="shop">
+            <div class="shop scroll-to-reveal">
                 <h2 class="page-title">В каких аптеках можно приобрести</h2>
                 <ul class="shop-list">
                     <!--START shop-list__item-->
@@ -1761,7 +1761,9 @@
 <script src="js/svg4everybody.min.js"></script>
 <script>svg4everybody(); // run it now or whenever you are ready</script>
 <script src="js/sumoselect/jquery.sumoselect.min.js"></script>
+<script src="js/jquery.viewportchecker.js"></script>
 <script src="js/jquery.mask.min.js"></script>
+<script src="js/rellax.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,190 @@
+.product {
+
+    .layout {
+        .product-advantages__item {
+            transform: scale(0);
+        }
+
+        .product-item-blur,
+        .product-item,
+        .product-name,
+        .product-text,
+        .product-callback,
+        .product-btn {
+            opacity: 0;
+        }
+
+        &.scale {
+
+            .product-name {
+                animation: .5s fadeInUp .2s forwards;
+            }
+            .product-text {
+                animation: .5s fadeInUp .3s forwards;
+            }
+
+            .product-callback {
+                animation: .5s fadeInUp .3s forwards;
+            }
+
+            .product-advantages__item:nth-child(1) {
+                animation: .4s scale .4s forwards;
+            }
+
+            .product-advantages__item:nth-child(2) {
+                animation: .5s scale .5s forwards;
+            }
+
+            .product-advantages__item:nth-child(3) {
+                animation: .6s scale .6s forwards;
+            }
+
+            .product-advantages__item:nth-child(4) {
+                animation: .7s scale .7s forwards;
+            }
+
+            .product-btn {
+                animation: .6s fadeInUp .8s forwards;
+            }
+
+            .product-item {
+                animation: .6s fadeInUp .8s forwards;
+            }
+            .product-item-blur {
+                animation: .7s fadeInUp .9s forwards;
+            }
+        }
+    }
+}
+
+.component-schedule {
+
+    .component-schedule-card {
+        opacity: 0;
+    }
+
+    .component-col--left {
+        .component-schedule-card {
+
+            &:nth-child(1) {
+                animation: .5s fadeInUp .3s forwards;
+            }
+            &:nth-child(2) {
+                animation: .6s fadeInUp .6s forwards;
+            }
+            &:nth-child(3) {
+                animation: .7s fadeInUp .7s forwards;
+            }
+        }
+    }
+    .component-col--right {
+        .component-schedule-card {
+
+            &:nth-child(1) {
+                animation: .8s fadeInUp .8s forwards;
+            }
+            &:nth-child(2) {
+                animation: .9s fadeInUp .9s forwards;
+            }
+            &:nth-child(3) {
+                animation: 1s fadeInUp 1s forwards;
+            }
+        }
+    }
+
+    .component-schedule-slider .component-schedule-card {
+        opacity: 1;
+    }
+
+
+}
+
+.questions-card:hover .questions-card__icon {
+    animation: 3s heartBeat .5s infinite forwards;
+}
+
+.component-elem--3 {
+    margin-left: -284px;
+}
+
+@media (max-width: 1040px) {
+    .component-elem--3 {
+        margin-left: -45vw;
+    }
+}
+
+@keyframes fadeInUpOp {
+    0% {
+        opacity: 0;
+        //transform: translate3d(0, 50px, 0);
+    }
+    100% {
+        opacity: 1;
+        //transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes scale {
+    0% {
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes heartBeat {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    14% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+
+    28% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    42% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+
+    70% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.heartBeat {
+    -webkit-animation-name: heartBeat;
+    animation-name: heartBeat;
+    -webkit-animation-duration: 1.1s;
+    animation-duration: 1.1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}

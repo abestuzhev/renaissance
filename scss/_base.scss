@@ -1208,13 +1208,34 @@ input.c-input--success::placeholder { color: #329954; }
     }
 }
 
+
+.add-animation .scroll-to-reveal {
+    //opacity: 0;
+}
+
+.add-animation .scroll-to-reveal.fadeInUp {
+    animation: fadeInUp 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
 @keyframes scaleUp {
     0% {
-        -webkit-transform: scale(0.6);
-        -moz-transform: scale(0.6);
-        -ms-transform: scale(0.6);
-        -o-transform: scale(0.6);
-        transform: scale(0.6);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
     }
 
     100% {

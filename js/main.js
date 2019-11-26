@@ -9,6 +9,18 @@ $(window).on("load", function () {
 
 $(function () {
 
+    $('.scroll-to-reveal').viewportChecker({
+        classToAdd: 'fadeInUp', // Class to add to the elements when they are visible
+        offset: 100
+    });
+
+    $('.product .layout').viewportChecker({
+        classToAdd: 'scale', // Class to add to the elements when they are visible
+        offset: 500
+    });
+
+    var rellax = new Rellax('.rellax');
+
 
     //header and footer menu
 

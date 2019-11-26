@@ -1297,19 +1297,25 @@
 
 
     &-item {
-        position: relative;
+        position: absolute;
+        bottom: 0;
         z-index: 2;
+        bottom: 0;
+        right: 0;
+
 
         &-layout {
             position: absolute;
             bottom: 5%;
             right: -6%;
+            width: 670px;
+            height: 488px;
         }
 
         &-blur {
             position: absolute;
             z-index: 1;
-            top: -23%;
+            top: 0;
             left: -4%;
         }
     }

@@ -71,9 +71,34 @@
 
     .product-item-layout {
         position: relative;
+        margin: 0 auto;
     }
 
     .product-body {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .product-advantages::before {
+        content: '';
+        display: none;
+    }
+
+    .product-advantages__item {
+        width: 25%;
+    }
+
+    .product-callback {
+        display: none;
+    }
+
+    .product {
+        background-position: 50% 50%;
+    }
+
+    .product-item img,
+    .product-item-blur img {
         width: 100%;
     }
 }
@@ -87,6 +112,12 @@
     .page-text--center {
         padding: 0;
     }
+
+    .product {
+        background-position: 0 0;
+    }
+
+
 }
 
 @media (max-width: 1040px){
@@ -112,10 +143,6 @@
 
     .quote {
         margin-bottom: 40px;
-    }
-
-    .product-callback {
-        display: none;
     }
 
     .composition-table__vitamin {
@@ -211,6 +238,15 @@
     .scheme-head {
         max-width: 407px;
     }
+
+    .product-name {
+        margin-bottom: 0;
+    }
+
+    .product-text {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 760px){
@@ -303,6 +339,35 @@
     .scheme {
         margin-bottom: 40px;
     }
+
+    .product-item {
+        width: 88vw;
+        bottom: auto;
+        top: 9vw;
+        right: auto;
+        left: 2vw;
+    }
+    .product-item-blur {
+        width: 61vw;
+    }
+
+    .product-item-layout {
+        width: 100%;
+        height: 66vw;
+    }
+
+    .product-advantages__item {
+        width: 50%;
+    }
+
+    .product-body {
+        padding: 40px 0;
+    }
+
+    .product-advantages {
+        margin-bottom: 10px;
+    }
+
 }
 
 
@@ -403,9 +468,46 @@
     .component {
         margin-bottom: 0;
     }
+
+    .strangebrain,
+    .footer__copyright {
+        display: none;
+    }
+
+    .footer__disclaimer {
+        padding-left:0;
+        padding-right: 0;
+    }
+
+    .footer {
+        text-align: center;
+    }
 }
 
+@media (max-width: 460px){
+    .product-advantages__item {
+        width: 100%;
+    }
 
+    .product-advantages-card__icon {
+        width: 99px;
+        height: 99px;
+        flex: 1 0 99px;
+    }
+
+    .product-advantages-card {
+        padding: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .product-advantages-card__text {
+        padding-left: 14px;
+        text-align: left;
+    }
+}
 
 
 

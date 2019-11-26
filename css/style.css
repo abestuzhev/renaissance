@@ -1390,11 +1390,37 @@ input.c-input--success::placeholder {
   .popup .c-col {
     padding: 1.4rem .8rem; }
 
+.add-animation .scroll-to-reveal.fadeInUp {
+  -webkit-animation: fadeInUp 1s ease-in-out;
+          animation: fadeInUp 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50px, 0);
+            transform: translate3d(0, 50px, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50px, 0);
+            transform: translate3d(0, 50px, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
 @-webkit-keyframes scaleUp {
   0% {
-    -webkit-transform: scale(0.6);
-    -ms-transform: scale(0.6);
-    transform: scale(0.6); }
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0); }
   100% {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -1402,9 +1428,9 @@ input.c-input--success::placeholder {
 
 @keyframes scaleUp {
   0% {
-    -webkit-transform: scale(0.6);
-    -ms-transform: scale(0.6);
-    transform: scale(0.6); }
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0); }
   100% {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -1622,6 +1648,184 @@ input.c-input--success::placeholder {
 
 .strangebrain__link:hover, .strangebrain__link:active, .strangebrain__link:focus {
   color: #000000; }
+
+.product .layout .product-advantages__item {
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0); }
+
+.product .layout .product-item-blur,
+.product .layout .product-item,
+.product .layout .product-name,
+.product .layout .product-text,
+.product .layout .product-callback,
+.product .layout .product-btn {
+  opacity: 0; }
+
+.product .layout.scale .product-name {
+  -webkit-animation: .5s fadeInUp .2s forwards;
+          animation: .5s fadeInUp .2s forwards; }
+
+.product .layout.scale .product-text {
+  -webkit-animation: .5s fadeInUp .3s forwards;
+          animation: .5s fadeInUp .3s forwards; }
+
+.product .layout.scale .product-callback {
+  -webkit-animation: .5s fadeInUp .3s forwards;
+          animation: .5s fadeInUp .3s forwards; }
+
+.product .layout.scale .product-advantages__item:nth-child(1) {
+  -webkit-animation: .4s scale .4s forwards;
+          animation: .4s scale .4s forwards; }
+
+.product .layout.scale .product-advantages__item:nth-child(2) {
+  -webkit-animation: .5s scale .5s forwards;
+          animation: .5s scale .5s forwards; }
+
+.product .layout.scale .product-advantages__item:nth-child(3) {
+  -webkit-animation: .6s scale .6s forwards;
+          animation: .6s scale .6s forwards; }
+
+.product .layout.scale .product-advantages__item:nth-child(4) {
+  -webkit-animation: .7s scale .7s forwards;
+          animation: .7s scale .7s forwards; }
+
+.product .layout.scale .product-btn {
+  -webkit-animation: .6s fadeInUp .8s forwards;
+          animation: .6s fadeInUp .8s forwards; }
+
+.product .layout.scale .product-item {
+  -webkit-animation: .6s fadeInUp .8s forwards;
+          animation: .6s fadeInUp .8s forwards; }
+
+.product .layout.scale .product-item-blur {
+  -webkit-animation: .7s fadeInUp .9s forwards;
+          animation: .7s fadeInUp .9s forwards; }
+
+.component-schedule .component-schedule-card {
+  opacity: 0; }
+
+.component-schedule .component-col--left .component-schedule-card:nth-child(1) {
+  -webkit-animation: .5s fadeInUp .3s forwards;
+          animation: .5s fadeInUp .3s forwards; }
+
+.component-schedule .component-col--left .component-schedule-card:nth-child(2) {
+  -webkit-animation: .6s fadeInUp .6s forwards;
+          animation: .6s fadeInUp .6s forwards; }
+
+.component-schedule .component-col--left .component-schedule-card:nth-child(3) {
+  -webkit-animation: .7s fadeInUp .7s forwards;
+          animation: .7s fadeInUp .7s forwards; }
+
+.component-schedule .component-col--right .component-schedule-card:nth-child(1) {
+  -webkit-animation: .8s fadeInUp .8s forwards;
+          animation: .8s fadeInUp .8s forwards; }
+
+.component-schedule .component-col--right .component-schedule-card:nth-child(2) {
+  -webkit-animation: .9s fadeInUp .9s forwards;
+          animation: .9s fadeInUp .9s forwards; }
+
+.component-schedule .component-col--right .component-schedule-card:nth-child(3) {
+  -webkit-animation: 1s fadeInUp 1s forwards;
+          animation: 1s fadeInUp 1s forwards; }
+
+.component-schedule .component-schedule-slider .component-schedule-card {
+  opacity: 1; }
+
+.questions-card:hover .questions-card__icon {
+  -webkit-animation: 3s heartBeat .5s infinite forwards;
+          animation: 3s heartBeat .5s infinite forwards; }
+
+.component-elem--3 {
+  margin-left: -284px; }
+
+@media (max-width: 1040px) {
+  .component-elem--3 {
+    margin-left: -45vw; } }
+
+@-webkit-keyframes fadeInUpOp {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeInUpOp {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50px, 0);
+            transform: translate3d(0, 50px, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0); }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0); }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); } }
+
+@-webkit-keyframes heartBeat {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  14% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05); }
+  28% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  42% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05); }
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes heartBeat {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  14% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05); }
+  28% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  42% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05); }
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+.heartBeat {
+  -webkit-animation-name: heartBeat;
+  animation-name: heartBeat;
+  -webkit-animation-duration: 1.1s;
+  animation-duration: 1.1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out; }
 
 .layout {
   max-width: 1180px;
@@ -2708,16 +2912,21 @@ input.c-input--success::placeholder {
       line-height: 1;
       font-weight: 700; }
   .product-item {
-    position: relative;
-    z-index: 2; }
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    bottom: 0;
+    right: 0; }
     .product-item-layout {
       position: absolute;
       bottom: 5%;
-      right: -6%; }
+      right: -6%;
+      width: 670px;
+      height: 488px; }
     .product-item-blur {
       position: absolute;
       z-index: 1;
-      top: -23%;
+      top: 0;
       left: -4%; }
   .product-advantages {
     display: -webkit-box;
@@ -2988,8 +3197,23 @@ input.c-input--success::placeholder {
   .quote {
     margin-bottom: 40px; }
   .product-item-layout {
-    position: relative; }
+    position: relative;
+    margin: 0 auto; }
   .product-body {
+    width: 100%;
+    max-width: 100%;
+    text-align: center; }
+  .product-advantages::before {
+    content: '';
+    display: none; }
+  .product-advantages__item {
+    width: 25%; }
+  .product-callback {
+    display: none; }
+  .product {
+    background-position: 50% 50%; }
+  .product-item img,
+  .product-item-blur img {
     width: 100%; } }
 
 @media (max-width: 1080px) {
@@ -2997,7 +3221,9 @@ input.c-input--success::placeholder {
     content: '';
     display: none; }
   .page-text--center {
-    padding: 0; } }
+    padding: 0; }
+  .product {
+    background-position: 0 0; } }
 
 @media (max-width: 1040px) {
   .shop-list {
@@ -3016,8 +3242,6 @@ input.c-input--success::placeholder {
     font-size: 30px; }
   .quote {
     margin-bottom: 40px; }
-  .product-callback {
-    display: none; }
   .composition-table__vitamin {
     font-size: 20px; }
   .composition-table__text {
@@ -3070,7 +3294,12 @@ input.c-input--success::placeholder {
   .scheme {
     background-position: 0 0; }
   .scheme-head {
-    max-width: 407px; } }
+    max-width: 407px; }
+  .product-name {
+    margin-bottom: 0; }
+  .product-text {
+    font-size: 18px;
+    margin-bottom: 10px; } }
 
 @media (max-width: 760px) {
   .shop-list__item {
@@ -3130,7 +3359,24 @@ input.c-input--success::placeholder {
   .scheme-body {
     padding: 40px 0; }
   .scheme {
-    margin-bottom: 40px; } }
+    margin-bottom: 40px; }
+  .product-item {
+    width: 88vw;
+    bottom: auto;
+    top: 9vw;
+    right: auto;
+    left: 2vw; }
+  .product-item-blur {
+    width: 61vw; }
+  .product-item-layout {
+    width: 100%;
+    height: 66vw; }
+  .product-advantages__item {
+    width: 50%; }
+  .product-body {
+    padding: 40px 0; }
+  .product-advantages {
+    margin-bottom: 10px; } }
 
 @media (max-width: 540px) {
   .page-title {
@@ -3186,4 +3432,40 @@ input.c-input--success::placeholder {
   .scheme {
     margin-bottom: 30px; }
   .component {
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+  .strangebrain,
+  .footer__copyright {
+    display: none; }
+  .footer__disclaimer {
+    padding-left: 0;
+    padding-right: 0; }
+  .footer {
+    text-align: center; } }
+
+@media (max-width: 460px) {
+  .product-advantages__item {
+    width: 100%; }
+  .product-advantages-card__icon {
+    width: 99px;
+    height: 99px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 99px;
+            flex: 1 0 99px; }
+  .product-advantages-card {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .product-advantages-card__text {
+    padding-left: 14px;
+    text-align: left; } }
