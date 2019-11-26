@@ -2708,15 +2708,17 @@ input.c-input--success::placeholder {
       line-height: 1;
       font-weight: 700; }
   .product-item {
-    position: absolute;
-    z-index: 2;
-    bottom: 5%;
-    right: -5%; }
+    position: relative;
+    z-index: 2; }
+    .product-item-layout {
+      position: absolute;
+      bottom: 5%;
+      right: -6%; }
     .product-item-blur {
       position: absolute;
       z-index: 1;
-      bottom: 31%;
-      right: 16%; }
+      top: -23%;
+      left: -4%; }
   .product-advantages {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2984,12 +2986,18 @@ input.c-input--success::placeholder {
   .component-schedule-card-point {
     display: none; }
   .quote {
-    margin-bottom: 40px; } }
+    margin-bottom: 40px; }
+  .product-item-layout {
+    position: relative; }
+  .product-body {
+    width: 100%; } }
 
 @media (max-width: 1080px) {
   .product-advantages::before {
     content: '';
-    display: none; } }
+    display: none; }
+  .page-text--center {
+    padding: 0; } }
 
 @media (max-width: 1040px) {
   .shop-list {
@@ -3043,7 +3051,11 @@ input.c-input--success::placeholder {
     left: 21%; }
   .component-elem--3,
   .component-elem--3 img {
-    width: 100%; } }
+    width: 100%; }
+  .component-schedule__title {
+    font-size: 21px; }
+  .page-text--big {
+    font-size: 24px; } }
 
 @media (max-width: 860px) {
   .composition-col {

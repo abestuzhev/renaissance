@@ -1294,17 +1294,23 @@
         }
     }
 
+
+
     &-item {
-        position: absolute;
+        position: relative;
         z-index: 2;
-        bottom: 5%;
-        right: -5%;
+
+        &-layout {
+            position: absolute;
+            bottom: 5%;
+            right: -6%;
+        }
 
         &-blur {
             position: absolute;
             z-index: 1;
-            bottom: 31%;
-            right: 16%;
+            top: -23%;
+            left: -4%;
         }
     }
 

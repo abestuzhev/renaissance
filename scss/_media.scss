@@ -68,12 +68,24 @@
     .quote {
         margin-bottom: 40px;
     }
+
+    .product-item-layout {
+        position: relative;
+    }
+
+    .product-body {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1080px){
     .product-advantages::before {
         content: '';
         display: none;
+    }
+
+    .page-text--center {
+        padding: 0;
     }
 }
 
@@ -164,6 +176,14 @@
     .component-elem--3,
     .component-elem--3 img {
         width: 100%;
+    }
+
+    .component-schedule__title {
+        font-size: 21px;
+    }
+
+    .page-text--big {
+        font-size: 24px;
     }
 
 }
