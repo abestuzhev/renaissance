@@ -79,6 +79,15 @@
 }
 
 @font-face {
+  font-family: 'Garamond';
+  src: url('../fonts/Garamond/Garamond.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Garamond/Garamond.woff') format('woff'),
+  url('../fonts/Garamond/Garamond.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal
+}
+
+@font-face {
   font-family: 'TTNorms Regular';
   src: url('../fonts/TTNorms-Regular.eot?#iefix') format('embedded-opentype'),
   url('../fonts/TTNorms-Regular.woff') format('woff'),

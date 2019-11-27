@@ -814,6 +814,7 @@
         flex-flow: column wrap;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
 
         &-img {
             img {
@@ -1441,7 +1442,8 @@
                 top: 0;
                 text-align: right;
                 line-height: .7;
-                font-family: 'Garamond Regular', serif;
+                //font-family: 'Garamond Regular', serif;
+                font-family: 'Garamond', serif;
             }
 
             &__body {
@@ -1565,6 +1567,22 @@
 .slick-next {
     right: 0;
     background-image: url(../img/icon-arrow-next.svg);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+
+    .slick-prev {
+        left: 0;
+        background-image: url(../img/icon-arrow-prev.svg);
+    }
+
+    .slick-next {
+        right: 0;
+        background-image: url(../img/icon-arrow-next.svg);
+    }
 }
 
 /*--------------------------------------------*/

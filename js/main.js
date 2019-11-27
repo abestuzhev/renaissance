@@ -47,6 +47,28 @@ $(function () {
     });
 
 
+
+    $('.shop-card').on({
+        mouseenter: function(){
+            var hoverImg = $(this).find('.shop-card-img').data('hover');
+            var imgSrc = $(this).find('img').attr('src');
+
+            $(this).find('img').attr('src', hoverImg);
+            $(this).find('.shop-card-img').data('hover', imgSrc);
+        },
+
+        mouseleave: function(){
+            var hoverImg = $(this).find('.shop-card-img').data('hover');
+            var imgSrc = $(this).find('img').attr('src');
+
+            $(this).find('img').attr('src', hoverImg);
+            $(this).find('.shop-card-img').data('hover', imgSrc);
+        }
+    });
+
+
+
+
     //header and footer menu
 
     jQuery(function($) {
