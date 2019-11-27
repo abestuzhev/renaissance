@@ -9,22 +9,42 @@ $(window).on("load", function () {
 
 $(function () {
 
-    $('.js-animation').viewportChecker({
-        classToAdd: 'scale', // Class to add to the elements when they are visible
-        offset: 100
-    });
 
-    $('.scroll-to-reveal').viewportChecker({
-        classToAdd: 'fadeInUp', // Class to add to the elements when they are visible
-        offset: 100
-    });
-
-    $('.product .layout').viewportChecker({
-        classToAdd: 'scale', // Class to add to the elements when they are visible
-        offset: 500
-    });
 
     var rellax = new Rellax('.rellax');
+
+
+    function deleteAnimation(){
+        if($(window).width() < 760){
+            $('div, p').each(function(){
+                $(this).removeClass('scale');
+                $(this).removeClass('js-animation');
+                $(this).removeClass('scroll-to-reveal');
+            });
+        }else {
+            $('.js-animation').viewportChecker({
+                classToAdd: 'scale', // Class to add to the elements when they are visible
+                offset: 100
+            });
+
+            $('.scroll-to-reveal').viewportChecker({
+                classToAdd: 'fadeInUp', // Class to add to the elements when they are visible
+                offset: 100
+            });
+
+            $('.product .layout').viewportChecker({
+                classToAdd: 'scale', // Class to add to the elements when they are visible
+                offset: 500
+            });
+        }
+
+    }
+
+    deleteAnimation();
+
+    $(window).on('resize', function(){
+        deleteAnimation();
+    });
 
 
     //header and footer menu
