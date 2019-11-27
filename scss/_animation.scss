@@ -57,11 +57,21 @@
     }
 }
 
+
+
+.component.scale {
+    
+    .page-text {
+        animation: .5s fadeInUp .3s forwards;
+    }
+}
+
 .component-schedule {
 
     .component-schedule-card {
         opacity: 0;
     }
+
 
     .component-col--left {
         .component-schedule-card {

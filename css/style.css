@@ -1702,6 +1702,10 @@ input.c-input--success::placeholder {
   -webkit-animation: .7s fadeInUp .9s forwards;
           animation: .7s fadeInUp .9s forwards; }
 
+.component.scale .page-text {
+  -webkit-animation: .5s fadeInUp .3s forwards;
+          animation: .5s fadeInUp .3s forwards; }
+
 .component-schedule .component-schedule-card {
   opacity: 0; }
 
