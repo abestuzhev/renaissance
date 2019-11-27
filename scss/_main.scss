@@ -814,7 +814,7 @@
         flex-flow: column wrap;
         justify-content: center;
         align-items: center;
-        cursor: pointer;
+        cursor:  pointer;
 
         &-img {
             img {
@@ -1561,11 +1561,13 @@
 
 .slick-prev {
     left: 0;
+    background-image: url(../img/icon-arrow-prev.png);
     background-image: url(../img/icon-arrow-prev.svg);
 }
 
 .slick-next {
     right: 0;
+    background-image: url(../img/icon-arrow-next.png);
     background-image: url(../img/icon-arrow-next.svg);
 }
 
