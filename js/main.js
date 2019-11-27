@@ -9,7 +9,7 @@ $(window).on("load", function () {
 
 $(function () {
 
-    $('.component').viewportChecker({
+    $('.js-animation').viewportChecker({
         classToAdd: 'scale', // Class to add to the elements when they are visible
         offset: 100
     });
