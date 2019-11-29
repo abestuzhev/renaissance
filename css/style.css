@@ -188,6 +188,12 @@ div {
   font-style: normal; }
 
 @font-face {
+  font-family: 'Garamond';
+  src: url("../fonts/Garamond/Garamond.eot?#iefix") format("embedded-opentype"), url("../fonts/Garamond/Garamond.woff") format("woff"), url("../fonts/Garamond/Garamond.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: 'TTNorms Regular';
   src: url("../fonts/TTNorms-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/TTNorms-Regular.woff") format("woff"), url("../fonts/TTNorms-Regular.ttf") format("truetype");
   font-weight: normal;
@@ -1649,18 +1655,18 @@ input.c-input--success::placeholder {
 .strangebrain__link:hover, .strangebrain__link:active, .strangebrain__link:focus {
   color: #000000; }
 
-.product .layout .product-advantages__item {
+.product.scroll-to-reveal .product-item-blur,
+.product.scroll-to-reveal .product-item,
+.product.scroll-to-reveal .product-name,
+.product.scroll-to-reveal .product-text,
+.product.scroll-to-reveal .product-callback,
+.product.scroll-to-reveal .product-btn {
+  opacity: 0; }
+
+.product.scroll-to-reveal .product-advantages__item {
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0); }
-
-.product .layout .product-item-blur,
-.product .layout .product-item,
-.product .layout .product-name,
-.product .layout .product-text,
-.product .layout .product-callback,
-.product .layout .product-btn {
-  opacity: 0; }
 
 .product .layout.scale .product-name {
   -webkit-animation: .5s fadeInUp .2s forwards;
@@ -1702,39 +1708,102 @@ input.c-input--success::placeholder {
   -webkit-animation: .7s fadeInUp .9s forwards;
           animation: .7s fadeInUp .9s forwards; }
 
-.component.scale .page-text {
+.component .component.scale .page-text {
   -webkit-animation: .5s fadeInUp .3s forwards;
           animation: .5s fadeInUp .3s forwards; }
 
-.component-schedule .component-schedule-card {
+.component .component-elem--1.js-animation {
   opacity: 0; }
 
-.component-schedule .component-col--left .component-schedule-card:nth-child(1) {
-  -webkit-animation: .5s fadeInUp .3s forwards;
-          animation: .5s fadeInUp .3s forwards; }
+.component .component-elem--1.scale {
+  -webkit-animation: .5s fadeInUp .5s forwards;
+          animation: .5s fadeInUp .5s forwards; }
 
-.component-schedule .component-col--left .component-schedule-card:nth-child(2) {
-  -webkit-animation: .6s fadeInUp .6s forwards;
-          animation: .6s fadeInUp .6s forwards; }
+.component .component-elem--2.js-animation {
+  opacity: 0; }
 
-.component-schedule .component-col--left .component-schedule-card:nth-child(3) {
+.component .component-elem--2.scale {
   -webkit-animation: .7s fadeInUp .7s forwards;
           animation: .7s fadeInUp .7s forwards; }
 
-.component-schedule .component-col--right .component-schedule-card:nth-child(1) {
+.component .page-text.js-animation {
+  opacity: 0; }
+
+.component .page-text.scale {
   -webkit-animation: .8s fadeInUp .8s forwards;
           animation: .8s fadeInUp .8s forwards; }
 
-.component-schedule .component-col--right .component-schedule-card:nth-child(2) {
-  -webkit-animation: .9s fadeInUp .9s forwards;
-          animation: .9s fadeInUp .9s forwards; }
+.component-schedule.js-animation .component-schedule__title {
+  opacity: 0; }
 
-.component-schedule .component-col--right .component-schedule-card:nth-child(3) {
+.component-schedule.scale .component-schedule__title {
   -webkit-animation: 1s fadeInUp 1s forwards;
           animation: 1s fadeInUp 1s forwards; }
 
-.component-schedule .component-schedule-slider .component-schedule-card {
+.component-schedule.js-animation .component-schedule-card,
+.component-schedule.js-animation .component-elem--3,
+.component-schedule.js-animation .component-figure {
+  opacity: 0; }
+
+.component-schedule.scale .component-col--left .component-schedule-card:nth-child(1) {
+  -webkit-animation: .5s fadeInUp .7s forwards;
+          animation: .5s fadeInUp .7s forwards; }
+
+.component-schedule.scale .component-col--left .component-schedule-card:nth-child(2) {
+  -webkit-animation: .6s fadeInUp .8s forwards;
+          animation: .6s fadeInUp .8s forwards; }
+
+.component-schedule.scale .component-col--left .component-schedule-card:nth-child(3) {
+  -webkit-animation: .7s fadeInUp .9s forwards;
+          animation: .7s fadeInUp .9s forwards; }
+
+.component-schedule.scale .component-col--right .component-schedule-card:nth-child(1) {
+  -webkit-animation: .8s fadeInUp 1s forwards;
+          animation: .8s fadeInUp 1s forwards; }
+
+.component-schedule.scale .component-col--right .component-schedule-card:nth-child(2) {
+  -webkit-animation: .9s fadeInUp 1.1s forwards;
+          animation: .9s fadeInUp 1.1s forwards; }
+
+.component-schedule.scale .component-col--right .component-schedule-card:nth-child(3) {
+  -webkit-animation: 1s fadeInUp 1.2s forwards;
+          animation: 1s fadeInUp 1.2s forwards; }
+
+.component-schedule.scale .component-schedule-slider .component-schedule-card {
   opacity: 1; }
+
+.component-schedule.scale .component-figure {
+  -webkit-animation: .8s fadeInUp .9s forwards;
+          animation: .8s fadeInUp .9s forwards; }
+
+.component-schedule.scale .component-elem--3 {
+  -webkit-animation: .8s fadeInUp 1s forwards;
+          animation: .8s fadeInUp 1s forwards; }
+
+.quote.js-animation {
+  opacity: 0; }
+  .quote.js-animation .quote-avatar {
+    opacity: 0; }
+
+.quote.scale {
+  -webkit-animation: .8s fadeInUp .5s forwards;
+          animation: .8s fadeInUp .5s forwards; }
+  .quote.scale .quote-text {
+    -webkit-animation: .9s scale .6s forwards;
+            animation: .9s scale .6s forwards; }
+  .quote.scale .quote-name {
+    -webkit-animation: 1s scale .7s forwards;
+            animation: 1s scale .7s forwards; }
+  .quote.scale .quote-avatar {
+    -webkit-animation: 1.2s fadeInUp .8s forwards;
+            animation: 1.2s fadeInUp .8s forwards; }
+
+.video.js-animation {
+  opacity: 0; }
+
+.video.scale {
+  -webkit-animation: .8s fadeInUp .5s forwards;
+          animation: .8s fadeInUp .5s forwards; }
 
 .questions-card:hover .questions-card__icon {
   -webkit-animation: 3s heartBeat .5s infinite forwards;
@@ -1742,6 +1811,82 @@ input.c-input--success::placeholder {
 
 .component-elem--3 {
   margin-left: -284px; }
+
+.composition.js-animation .composition-card,
+.composition.js-animation .page-title,
+.composition.js-animation .page-text {
+  opacity: 0; }
+
+.composition.scale .page-title {
+  -webkit-animation: .8s fadeInUp .5s forwards;
+          animation: .8s fadeInUp .5s forwards; }
+
+.composition.scale .page-text {
+  -webkit-animation: .8s fadeInUp .6s forwards;
+          animation: .8s fadeInUp .6s forwards; }
+
+.composition.scale .composition-col:nth-child(1) .composition-card:nth-child(1) {
+  -webkit-animation: .8s fadeInUp .6s forwards;
+          animation: .8s fadeInUp .6s forwards; }
+
+.composition.scale .composition-col:nth-child(1) .composition-card:nth-child(2) {
+  -webkit-animation: .9s fadeInUp .7s forwards;
+          animation: .9s fadeInUp .7s forwards; }
+
+.composition.scale .composition-col:nth-child(2) .composition-card:nth-child(1) {
+  -webkit-animation: .8s fadeInUp .8s forwards;
+          animation: .8s fadeInUp .8s forwards; }
+
+.composition.scale .composition-col:nth-child(2) .composition-card:nth-child(2) {
+  -webkit-animation: .9s fadeInUp .9s forwards;
+          animation: .9s fadeInUp .9s forwards; }
+
+.scheme.js-animation {
+  opacity: 0; }
+  .scheme.js-animation .scheme-head,
+  .scheme.js-animation .scheme-list__item {
+    opacity: 0; }
+
+.scheme.scale {
+  -webkit-animation: .5s fadeInUp .4s forwards;
+          animation: .5s fadeInUp .4s forwards; }
+  .scheme.scale .scheme-head {
+    -webkit-animation: .8s fadeInUp .5s forwards;
+            animation: .8s fadeInUp .5s forwards; }
+  .scheme.scale .scheme-list__item:nth-child(1) {
+    -webkit-animation: .8s fadeInUp .7s forwards;
+            animation: .8s fadeInUp .7s forwards; }
+  .scheme.scale .scheme-list__item:nth-child(2) {
+    -webkit-animation: .8s fadeInUp .8s forwards;
+            animation: .8s fadeInUp .8s forwards; }
+  .scheme.scale .scheme-list__item:nth-child(3) {
+    -webkit-animation: .8s fadeInUp .9s forwards;
+            animation: .8s fadeInUp .9s forwards; }
+
+.questions.js-animation .questions-col {
+  opacity: 0; }
+
+.questions.scale .questions-col:nth-child(1) {
+  -webkit-animation: .8s fadeInUp .6s forwards;
+          animation: .8s fadeInUp .6s forwards; }
+
+.questions.scale .questions-col:nth-child(2) {
+  -webkit-animation: .8s fadeInUp .8s forwards;
+          animation: .8s fadeInUp .8s forwards; }
+
+.document.js-animation {
+  opacity: 0; }
+
+.document.scale {
+  -webkit-animation: .8s fadeInUp .6s forwards;
+          animation: .8s fadeInUp .6s forwards; }
+
+.shop.js-animation {
+  opacity: 0; }
+
+.shop.scale {
+  -webkit-animation: 1s fadeInUp .8s forwards;
+          animation: 1s fadeInUp .8s forwards; }
 
 @media (max-width: 1040px) {
   .component-elem--3 {
@@ -2535,7 +2680,8 @@ input.c-input--success::placeholder {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  cursor: pointer; }
 
 .document-list {
   padding: 0 30px; }
@@ -2565,6 +2711,7 @@ input.c-input--success::placeholder {
     height: 78px;
     border: 1px solid #e7e9e8;
     border-radius: 150px;
+    background: url(../img/icon-doc.png) 50% 50% no-repeat;
     background: url(../img/icon-doc.svg) 50% 50% no-repeat;
     background-size: 31px 42px; }
     .document-card__icon img {
@@ -3041,14 +3188,14 @@ input.c-input--success::placeholder {
       top: 0;
       text-align: right;
       line-height: .7;
-      font-family: 'Garamond Regular', serif; }
+      font-family: 'Garamond', serif; }
     .component-schedule-card__title {
       font-size: 22px;
       color: #b7332d;
       margin-bottom: 4px;
       line-height: 1; }
     .component-schedule-card__text {
-      font-size: 16px;
+      font-size: 17px;
       color: #313131;
       line-height: 1; }
     .component-schedule-card-point {
@@ -3122,11 +3269,21 @@ input.c-input--success::placeholder {
 
 .slick-prev {
   left: 0;
+  background-image: url(../img/icon-arrow-prev.png);
   background-image: url(../img/icon-arrow-prev.svg); }
 
 .slick-next {
   right: 0;
+  background-image: url(../img/icon-arrow-next.png);
   background-image: url(../img/icon-arrow-next.svg); }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+  .slick-prev {
+    left: 0;
+    background-image: url(../img/icon-arrow-prev.svg); }
+  .slick-next {
+    right: 0;
+    background-image: url(../img/icon-arrow-next.svg); } }
 
 /*--------------------------------------------*/
 /*--------------------------------------------*/

@@ -9,22 +9,64 @@ $(window).on("load", function () {
 
 $(function () {
 
-    $('.component').viewportChecker({
-        classToAdd: 'scale', // Class to add to the elements when they are visible
-        offset: 100
-    });
 
-    $('.scroll-to-reveal').viewportChecker({
-        classToAdd: 'fadeInUp', // Class to add to the elements when they are visible
-        offset: 100
-    });
-
-    $('.product .layout').viewportChecker({
-        classToAdd: 'scale', // Class to add to the elements when they are visible
-        offset: 500
-    });
 
     var rellax = new Rellax('.rellax');
+
+
+    function deleteAnimation(){
+        if($(window).width() < 760){
+            $('div, p').each(function(){
+                $(this).removeClass('scale');
+                $(this).removeClass('js-animation');
+                $(this).removeClass('scroll-to-reveal');
+            });
+        }else {
+            $('.js-animation').viewportChecker({
+                classToAdd: 'scale', // Class to add to the elements when they are visible
+                offset: 100
+            });
+
+            $('.scroll-to-reveal').viewportChecker({
+                classToAdd: 'fadeInUp', // Class to add to the elements when they are visible
+                offset: 100
+            });
+
+            $('.product .layout').viewportChecker({
+                classToAdd: 'scale', // Class to add to the elements when they are visible
+                offset: 500
+            });
+        }
+
+    }
+
+    deleteAnimation();
+
+    $(window).on('resize', function(){
+        deleteAnimation();
+    });
+
+
+
+    $('.shop-card').on({
+        mouseenter: function(){
+            var hoverImg = $(this).find('.shop-card-img').data('hover');
+            var imgSrc = $(this).find('img').attr('src');
+
+            $(this).find('img').attr('src', hoverImg);
+            $(this).find('.shop-card-img').data('hover', imgSrc);
+        },
+
+        mouseleave: function(){
+            var hoverImg = $(this).find('.shop-card-img').data('hover');
+            var imgSrc = $(this).find('img').attr('src');
+
+            $(this).find('img').attr('src', hoverImg);
+            $(this).find('.shop-card-img').data('hover', imgSrc);
+        }
+    });
+
+
 
     $(".js-btn-to-scroll").click(function(e){
         e.preventDefault();
