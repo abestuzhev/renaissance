@@ -26,6 +26,18 @@ $(function () {
 
     var rellax = new Rellax('.rellax');
 
+    $(".js-btn-to-scroll").click(function(e){
+        e.preventDefault();
+        var hash = $(this).attr("href");
+        var target = $(hash);
+
+        $("html, body").stop().animate({
+            scrollTop: target.offset().top
+        }, 1000, function(){
+            window.location.hash = hash;
+        });
+    });
+
 
     //header and footer menu
 
