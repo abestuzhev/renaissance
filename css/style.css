@@ -2962,9 +2962,6 @@ input.c-input--success::placeholder {
     border-width: 0;
     outline-width: 0; }
 
-.video .page-title {
-  display: none; }
-
 .quote {
   margin-bottom: 90px;
   background-image: -o-linear-gradient(bottom, #b7332d 0%, #bf4828 100%);
