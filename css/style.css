@@ -1777,8 +1777,8 @@ input.c-input--success::placeholder {
           animation: .8s fadeInUp .9s forwards; }
 
 .component-schedule.scale .component-elem--3 {
-  -webkit-animation: .8s fadeInUp 1s forwards;
-          animation: .8s fadeInUp 1s forwards; }
+  -webkit-animation: .8s fadeInUpOp 1s forwards;
+          animation: .8s fadeInUpOp 1s forwards; }
 
 .quote.js-animation {
   opacity: 0; }
